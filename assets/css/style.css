@@ -25,3 +25,32 @@ body {
     -moz-animation: none;
     animation: none;
 }
+
+#newVegas {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.5rem;
+    font-style: italic;
+    word-spacing: normal;
+    font-variant: small-caps;
+    /*Glow obtained from w3schools*/
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/*Glow obtained from w3schools*/
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f0f0, 0 0 40px #f0f0f0, 0 0 50px #f0f0f0, 0 0 60px #f0f0f0, 0 0 70px #f0f0f0;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #f0f0f0, 0 0 40px #f0f0f0, 0 0 50px #f0f0f0, 0 0 60px #f0f0f0, 0 0 70px #f0f0f0, 0 0 80px #f0f0f0;
+    }
+  }
+
+.main {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
