@@ -1,0 +1,27 @@
+body {
+    background-image: url(../images/wallpaper.jpg);
+    background-position: center;
+    width: 100%;
+    background-repeat: repeat-y;
+}
+.main {
+    height: 925px;
+    background-color: white;
+    opacity: .7;
+}
+
+.jumbotron {
+    height: 150px;
+    background-color: black;
+}
+
+#gameTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.5rem;
+    font-style: normal;
+    word-spacing: normal;
+    font-variant: small-caps;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
