@@ -5,33 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
   
   <title>Fallout New Vegas Trivia Game</title>
 </head>
 
 <body>
-  <div class="jumbotron bg-primary text-center">
-    <h1 class="text-light">Trivia Game</h1>
+  <div class="jumbotron jumbotron-fluid text-center mb-0 pb-3 pt-4">
+    <h1><span class="text-light" id="newVegas">FALLOUT New Vegas </span><span class="text-danger" id="gameTitle">Trivia Game</span> </h1>
   </div>
-  <container id="wrapper">
+  <div id="wrapper">
     <row>
-      <div class="col-md-12">
-        <div class="lead">Time Left: <span id="display">00:30</span></div>
-          <div id="startBtn"></div>
-          <div id="begin"></div>
-          <div id="questionOne"></div>
-          <div id="questionTwo"></div>
-          <div id="questionThree"></div>
-          <div id="questionFour"></div>
-          <div id="questionFive"></div>
-          <div id="submitBtn"></div>
+      <div class="col-md-3"></div>
+      <div class="col-md-6 mb-3 d-block mx-auto main">
+        <div class="text-center pb-4 pt-5">Time Left: <span id="display">00:30</span></div>
+          <div class="text-center"id="startBtn"></div>
+          <div class="text-center" id="begin"></div>
+          <div class="text-center" id="questionOne"></div>
+          <div class="text-center" id="questionTwo"></div>
+          <div class="text-center" id="questionThree"></div>
+          <div class="text-center" id="questionFour"></div>
+          <div class="text-center" id="questionFive"></div>
+          <div class="text-center" id="submitBtn"></div>
       </div>
     </row>
-  </container>
+  </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="game.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
