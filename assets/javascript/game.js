@@ -53,3 +53,79 @@ $(document).ready(function () {
           //Submit Answers
       $("#submitBtn").append("<p><input type='button' value='Submit'></p>").addClass("pb-5 pt-4 quest subBtn");
     });
+
+    
+    $(document).on("click", "#submitBtn", function(){
+    
+      stop();
+
+      var userOne = $("input:radio[name='qOne']:checked").val();
+      console.log(userOne);
+      if (userOne === "false") {
+          correct++;
+      } 
+      else if (userOne ===  "true") {
+          wrong++;
+      } 
+      else {
+          unanswered++;
+      }
+
+      var userTwo = $("input:radio[name='qTwo']:checked").val();
+      console.log(userTwo);
+      if (userTwo === "false") {
+          wrong++;
+      } 
+      else if (userTwo ===  "true") {
+          correct++;
+      }  
+      else {
+          unanswered++;
+      }
+
+      var userThree = $("input:radio[name='qThree']:checked").val();
+      if (userThree === "false") {
+          correct++;
+      } 
+      else if (userThree ===  "true") {
+          wrong++;
+      } 
+      else {
+          unanswered++;
+      }
+
+      var userFour = $("input:radio[name='qFour']:checked").val();
+      if (userFour === "false") {
+          correct++;
+      } 
+      else if (userFour ===  "true") {
+          wrong++;
+      } 
+      else  {
+          unanswered++;
+      }
+
+      var userFive = $("input:radio[name='qFive']:checked").val();
+      if (userFive === "false") {
+          wrong++;
+      } 
+      else if (userFive ===  "true") {
+          correct++;
+      } 
+      else {
+          unanswered++;
+      }
+
+      $(".questionClass").empty();
+
+      $("#questionOne").addClass("mt-3 ml-3 quest questionClass");
+      $(".q1").append("<p>Correct: " + correct + "</p>");
+
+      $("#questionTwo").addClass("mt-3 ml-3 quest questionClass");
+      $(".q3").append("<p>Wrong: " + wrong + "</p>");
+
+      $("#questionThree").addClass("mt-3 ml-3 quest questionClass");
+      $(".q3").append("<p>Unanswered: " + unanswered + "</p>");
+
+      $(".subBtn").empty();
+  });
